@@ -6,24 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-</head>
+    <link rel="stylesheet" href="style.css"> </head>
 
 <body>
     <div class="container">
-        <form action="https://formspree.io/f/mgebyqpn" method="POST">
-            <label>
-                Email:
-                <input type="email" name="email" placeholder="Email" required>
-            </label>
-            <label>
-                Telefone:
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{2} 9 [0-9]{4}-[0-9]{4}"
-                    placeholder="85 9 0000-0000">
-            </label>
-            <label>
-                Menssagem:
-                <textarea name="message" placeholder="Escreva aqui sua menssagem:" required></textarea>
-            </label>
+        <form class="formulario" action="https://formspree.io/f/mgebyqpn" method="POST">
+            <input type="email" name="email" placeholder="Email:" required>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{2} 9 [0-9]{4}-[0-9]{4}"
+                placeholder="Telefone: 85 9 0000-0000">
+            <textarea name="message" placeholder="Escreva aqui sua menssagem:" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </div>
