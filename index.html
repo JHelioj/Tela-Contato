@@ -13,12 +13,18 @@
         <form action="https://formspree.io/f/mgebyqpn" method="POST">
             <label>
                 Email:
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" required>
+            </label>
+            <label>
+                Telefone:
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{2} 9 [0-9]{4}-[0-9]{4}"
+                    placeholder="85 9 0000-0000">
             </label>
             <label>
                 Menssagem:
-                <textarea name="message"></textarea>
+                <textarea name="message" placeholder="Escreva aqui sua menssagem:" required></textarea>
             </label>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
             <!-- your other form fields go here -->
             <button type="submit">Enviar</button>
         </form>
